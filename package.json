@@ -1,6 +1,6 @@
 {
   "name": "veriql-mcp",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "mcpName": "app.veriql/veriql-mcp",
   "description": "Veriql as MCP tools for agents that move money: a USDT pre-send check, payee and signature checks, Tether/Circle freezes, plus wallet, token and launch risk. Pays per call over x402 from your own wallet, or with a key.",
   "keywords": [

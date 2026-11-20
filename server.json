@@ -3,14 +3,14 @@
   "name": "app.veriql/veriql-mcp",
   "title": "Veriql Risk",
   "description": "Before an agent pays: USDT pre-send, payee, signature and freeze checks read off chain.",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "websiteUrl": "https://veriql.app/api",
   "packages": [
     {
       "registryType": "npm",
       "registryBaseUrl": "https://registry.npmjs.org",
       "identifier": "veriql-mcp",
-      "version": "1.4.0",
+      "version": "1.4.1",
       "runtimeHint": "npx",
       "transport": {
         "type": "stdio"
@@ -42,5 +42,9 @@
         }
       ]
     }
-  ]
+  ],
+  "repository": {
+    "url": "https://github.com/josephtossi/veriql-mcp",
+    "source": "github"
+  }
 }

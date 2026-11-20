@@ -51,7 +51,7 @@ async function run(endpoint: V1Endpoint, params: Record<string, string | undefin
 // listing its servers showed an identity nobody had heard of, and a hardcoded
 // version was a second place to forget on release.
 export const MCP_NAME = "veriql-mcp";
-export const MCP_VERSION = "1.4.0";
+export const MCP_VERSION = "1.4.1";
 
 const server = new McpServer({ name: MCP_NAME, version: MCP_VERSION });
 
