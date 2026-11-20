@@ -1,0 +1,46 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "app.veriql/veriql-mcp",
+  "title": "Veriql Risk",
+  "description": "Before an agent pays: USDT pre-send, payee, signature and freeze checks read off chain.",
+  "version": "1.4.0",
+  "websiteUrl": "https://veriql.app/api",
+  "packages": [
+    {
+      "registryType": "npm",
+      "registryBaseUrl": "https://registry.npmjs.org",
+      "identifier": "veriql-mcp",
+      "version": "1.4.0",
+      "runtimeHint": "npx",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "VERIQL_WALLET_PRIVATE_KEY",
+          "description": "An EVM wallet holding a little USDC on Base, Polygon, Arbitrum or Avalanche. Each call pays $0.005-$0.05 over x402: no account, no key. Set this or VERIQL_API_KEY.",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "VERIQL_MAX_USD_PER_CALL",
+          "description": "Refuse any single payment above this many USD.",
+          "default": "0.05",
+          "isRequired": false
+        },
+        {
+          "name": "VERIQL_API_KEY",
+          "description": "Prepaid credits from https://veriql.app/api, instead of a wallet.",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "VERIQL_BASE_URL",
+          "description": "Override the API origin. Only needed for self-hosting.",
+          "default": "https://veriql.app",
+          "isRequired": false
+        }
+      ]
+    }
+  ]
+}

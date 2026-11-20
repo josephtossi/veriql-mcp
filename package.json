@@ -1,0 +1,69 @@
+{
+  "name": "veriql-mcp",
+  "version": "1.4.0",
+  "mcpName": "app.veriql/veriql-mcp",
+  "description": "Veriql as MCP tools for agents that move money: a USDT pre-send check, payee and signature checks, Tether/Circle freezes, plus wallet, token and launch risk. Pays per call over x402 from your own wallet, or with a key.",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "crypto",
+    "solana",
+    "ethereum",
+    "security",
+    "honeypot",
+    "rug-check",
+    "token-safety",
+    "wallet-security",
+    "web3",
+    "claude",
+    "cursor",
+    "x402",
+    "usdc",
+    "pre-payment-check",
+    "sanctions"
+  ],
+  "homepage": "https://veriql.app/api",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "veriql-mcp": "dist/server.js"
+  },
+  "main": "dist/core.js",
+  "types": "dist/core.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/core.d.ts",
+      "default": "./dist/core.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "zod": "^4.6.5",
+    "@x402/evm": "2.30.0",
+    "@x402/fetch": "2.30.0",
+    "viem": "^2.21.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.0",
+    "@types/node": "^20.11.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josephtossi/veriql-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/josephtossi/veriql-mcp/issues"
+  }
+}
