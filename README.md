@@ -1,5 +1,7 @@
 # veriql-mcp
 
+[![josephtossi/veriql-mcp MCP server](https://glama.ai/mcp/servers/josephtossi/veriql-mcp/badges/score.svg)](https://glama.ai/mcp/servers/josephtossi/veriql-mcp)
+
 Crypto wallet and token risk checks as MCP tools, so an agent can ask "is this token safe to buy?" and get an answer with the math attached.
 
 The checks are read-only: every signal comes from public on-chain data, and nothing you check is ever signed or moved. The only thing this server can sign is its own fee, and only if you give it a payment wallet (below): a USDC payment of $0.005 to $0.05 per call to Veriql, capped per call.
